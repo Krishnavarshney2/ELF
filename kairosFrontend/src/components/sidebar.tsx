@@ -54,7 +54,7 @@ export function Sidebar() {
         <div className="flex items-center justify-between px-1">
           <div className="flex items-center gap-2">
             <CircleDashed className="text-wasabi" size={26} strokeWidth={2.5} />
-            <span className="font-display text-xl font-extrabold">Kairos</span>
+            <span className="font-display text-xl font-extrabold">ELF</span>
           </div>
           <button
             aria-label="collapse sidebar"

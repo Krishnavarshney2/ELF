@@ -79,7 +79,7 @@ function HowItWorks({ onClose }: { onClose: () => void }) {
       </span>
 
       <h2 id="info-modal-title" className="mt-4 font-display text-2xl font-extrabold leading-tight">
-        How Kairos works
+        How ELF works
       </h2>
       <p className="mt-2 text-sm leading-relaxed text-muted">
         One click scans what&apos;s going viral in crypto right now, finds the patterns behind it, and hands you

@@ -5,7 +5,7 @@ import type { Result, VibeOpt } from "./types";
 import { addRun, useHistory } from "./history";
 import { resetImageUsage } from "./usage-store";
 
-const JOB_KEY = "kairos_job";
+const JOB_KEY = "elf_job";
 
 export type Phase = "idle" | "running" | "done";
 
@@ -116,7 +116,7 @@ export function useRun() {
       localStorage.setItem(JOB_KEY, JSON.stringify(job));
       resetImageUsage();
       setRunning(true); // only now clear the board + show skeletons (a run actually started)
-      window.dispatchEvent(new Event("kairos-generating")); // pop the portfolio modal once the run is live
+      window.dispatchEvent(new Event("elf-generating")); // pop the portfolio modal once the run is live
       poll(job);
     } catch (e) {
       setError(e instanceof Error ? e.message : "something broke");

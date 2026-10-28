@@ -1,6 +1,6 @@
 <div align="center">
 
-# ⚡ Kairos — Backend
+# ⚡ ELF — Backend
 
 ### AI engine that turns live crypto signals into viral content ideas
 
@@ -12,7 +12,7 @@ Collect viral crypto content → find the patterns → generate ready-to-film id
 [![Railway](https://img.shields.io/badge/Deploy-Railway-0B0D0E?logo=railway&logoColor=white)](https://railway.app)
 [![LLM](https://img.shields.io/badge/LLM-Gemini%20%C2%B7%20OpenRouter-FF6F00)](https://ai.google.dev)
 
-**Frontend repo →** [`kairosFrontend`](https://github.com/Iglxkardam/kairosFrontend)
+**Frontend repo →** [`kairosFrontend`](../kairosFrontend)
 
 </div>
 

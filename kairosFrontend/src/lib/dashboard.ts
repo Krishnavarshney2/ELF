@@ -2,7 +2,7 @@
 
 export type Accent = "wasabi" | "cool" | "orange" | "sage" | "cassis";
 
-export const me = { name: "Alex Morgan", email: "alex@kairos.ai", workspace: "Crypto Creators HQ" };
+export const me = { name: "Alex Morgan", email: "alex@elf.ai", workspace: "Crypto Creators HQ" };
 export const plan = { name: "Pro Plan", resets: "Resets in 12 days", pct: 82 };
 
 export const steps: { n: number; title: string; desc: string; accent: Accent }[] = [

@@ -98,8 +98,8 @@ async function genViaOpenRouter(p: string, refs: Ref[]): Promise<{ img: Ref; usa
     headers: {
       "content-type": "application/json",
       authorization: `Bearer ${env.OPENROUTER_API_KEY}`,
-      "HTTP-Referer": "https://kairos.app",
-      "X-Title": "Kairos",
+      "HTTP-Referer": "https://elf.app",
+      "X-Title": "ELF",
     },
     body: JSON.stringify({ model: env.IMAGE_MODEL, messages: [{ role: "user", content }], modalities: ["image", "text"] }),
     signal: AbortSignal.timeout(45_000),

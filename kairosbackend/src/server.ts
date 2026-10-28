@@ -91,7 +91,7 @@ app.post("/voice", async (req) => {
 
 try {
   const addr = await app.listen({ port: env.PORT, host: "0.0.0.0" });
-  log.info({ addr }, "kairos backend up");
+  log.info({ addr }, "elf backend up");
 } catch (e) {
   log.error({ err: String(e) }, "listen failed");
   process.exit(1);

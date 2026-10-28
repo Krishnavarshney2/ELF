@@ -6,7 +6,7 @@ import { log } from "../log.js";
 // public reddit json 403s from datacenter ips (railway/cloud). with a script-app client id/secret
 // we use app-only oauth which is allowed from anywhere. then public json (browser ua), then rss
 // (least blocked) as a last resort — rss carries no score, so those rank by feed order.
-const UA = "kairos/1.0 by u/thesujalshow";
+const UA = "elf/1.0 by u/thesujalshow";
 const BROWSER_UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36";
 const rss = new Parser({ timeout: 15_000, headers: { "user-agent": BROWSER_UA, accept: "application/rss+xml, application/xml, text/xml" } });
 const SUBS = ["CryptoCurrency", "Bitcoin", "ethereum", "CryptoMarkets", "solana", "defi"];

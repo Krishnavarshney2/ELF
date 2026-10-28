@@ -3,7 +3,7 @@
 import { useSyncExternalStore } from "react";
 import type { Result } from "./types";
 
-const KEY = "kairos_history";
+const KEY = "elf_history";
 const MAX = 12; // each run is ~10-30kb json (no images — those live on r2), so this stays well under quota
 
 export type HistoryEntry = { id: string; ts: number; focus: string; vibe: string; result: Result };
@@ -48,7 +48,7 @@ const ping = () => {
 
 export function addRun(entry: HistoryEntry) {
   write([entry, ...read().filter((e) => e.id !== entry.id)]);
-  window.dispatchEvent(new Event("kairos-history"));
+  window.dispatchEvent(new Event("elf-history"));
   ping();
 }
 
@@ -76,11 +76,11 @@ export function useHistory(): HistoryEntry[] {
   return useSyncExternalStore(
     (cb) => {
       subs.add(cb);
-      window.addEventListener("kairos-history", cb);
+      window.addEventListener("elf-history", cb);
       window.addEventListener("storage", cb);
       return () => {
         subs.delete(cb);
-        window.removeEventListener("kairos-history", cb);
+        window.removeEventListener("elf-history", cb);
         window.removeEventListener("storage", cb);
       };
     },

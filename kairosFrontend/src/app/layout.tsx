@@ -13,7 +13,7 @@ const display = Bricolage_Grotesque({
 const body = Inter({ subsets: ["latin"], variable: "--inter" });
 
 export const metadata: Metadata = {
-  title: "kairos — crypto content oracle",
+  title: "ELF — crypto content oracle",
   description:
     "reads what's going viral across reddit, youtube and crypto news, then hands you ideas worth filming.",
 };

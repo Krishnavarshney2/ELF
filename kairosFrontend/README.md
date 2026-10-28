@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🎯 Kairos — Frontend
+# 🎯 ELF — Frontend
 
 ### A live, product-grade dashboard for the AI crypto-content engine
 
@@ -12,7 +12,7 @@ Watch the pipeline run in real time, browse platform-native idea previews with A
 [![Tailwind](https://img.shields.io/badge/Tailwind-4-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
 [![Vercel](https://img.shields.io/badge/Deploy-Vercel-000000?logo=vercel)](https://vercel.com)
 
-**Backend repo →** [`kairosbackend`](https://github.com/Iglxkardam/kairosbackend)
+**Backend repo →** [`kairosbackend`](../kairosbackend)
 
 </div>
 
@@ -34,7 +34,7 @@ Watch the pipeline run in real time, browse platform-native idea previews with A
 ```mermaid
 flowchart LR
   U["🌐 Browser"] -->|"POST /api/generate"| PX["Route handler<br/>(reverse proxy)"]
-  PX -->|"+ x-proxy-secret<br/>+ real client IP"| BE["Kairos backend<br/>(Railway)"]
+  PX -->|"+ x-proxy-secret<br/>+ real client IP"| BE["ELF backend<br/>(Railway)"]
   BE -->|"{ jobId }"| PX --> U
   U -->|"poll /api/job/:id every 2s"| PX2["Job proxy"] --> BE
   U -->|"lazy /api/thumbnail per card"| PX3["Thumb proxy"] --> BE
@@ -56,11 +56,11 @@ pnpm dev                     # http://localhost:3000
 `.env.local`:
 
 ```bash
-BACKEND_URL=http://localhost:8080   # the kairos backend
+BACKEND_URL=http://localhost:8080   # the elf backend
 PROXY_SECRET=                        # must match the backend's PROXY_SECRET
 ```
 
-> Run the [backend](https://github.com/Iglxkardam/kairosbackend) alongside it. Then hit **Start generating** and watch the pipeline run.
+> Run the [backend](../kairosbackend) alongside it. Then hit **Start generating** and watch the pipeline run.
 
 ### Verify
 

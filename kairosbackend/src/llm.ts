@@ -23,7 +23,7 @@ function providers(): Provider[] {
           baseURL: "https://openrouter.ai/api/v1",
           key: env.OPENROUTER_API_KEY,
           model: env.LLM_FALLBACK_MODEL,
-          headers: { "HTTP-Referer": "https://kairos.app", "X-Title": "Kairos" },
+          headers: { "HTTP-Referer": "https://elf.app", "X-Title": "ELF" },
         },
       ]
     : [];
